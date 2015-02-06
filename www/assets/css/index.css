@@ -1,0 +1,14 @@
+
+
+div[data-role=page] .ui-header .ui-title {
+	font-size:0.8em;
+}
+
+.picframe{
+	margin:auto;
+	height:200px;
+	width:250px;
+	min-height: 100px;
+	min-width:100px;
+	border:1px solid #36C;
+	};

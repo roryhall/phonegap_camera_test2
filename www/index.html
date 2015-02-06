@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--
+//-----------------------------------------------------
+// Use as boiler plate code
+// Test2a
+// Rory Hall
+//-----------------------------------------------------
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+		<meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"
+
+
+		<link rel="stylesheet" type="text/css" href="assets/css/jquery.mobile-1.4.5.min.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/index.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/jquery.mobile.flatui.css" />
+		<style>
+    		img.fullscreen {
+        	max-height: 100%;
+        	max-width: 100%;
+    		}       
+		</style>
+        
+	<title>test2a</title>
+	</head>
+    
+    
+    <body>
+	<!-- /Home Page -->
+	<div data-role="page" id = "introPage" data-theme = "d">
+
+		<div data-role="header">
+			<h1>Phonegap Camera Test2a</h1>        	
+		</div><!-- /header -->
+	
+    	<!-- /content -->
+		<div data-role="content">	
+			<p>Introduction dummy</p>
+			<p>Lorem ipsum dolor sit amet, vim in viris gloriatur expetendis, ea qui agam virtute. Cu accumsan 			invenire referrentur sea, at adipisci appellantur reformidans sit. Has at vide accommodare. Mea equidem vocibus no, an posse iudico eam, mel id inimicus argumentum comprehensam. An nec erant instructior, vix regione epicurei ei. Dicam consulatu democritum ne vim, ea utroque sensibus necessitatibus sit.</p>
+			<p>Atomorum omittantur conclusionemque te sed. Eos an alii ipsum harum. An cum nulla delectus persequeris, quas noluisse eum ne, te aperiri persius nec. Laudem copiosae adipisci cu est, ut mentitum evertitur pri. Mel no nostro fierent, sed ne modo impedit. Nam ne doming everti.</p>
+			<p>Quo volumus menandri te, dicta audiam ne qui. Assum facilis ex pri. Cu mel tamquam inermis necessitatibus, graecis tincidunt cu sea. Vim ex nostro integre periculis. Cu vix viris apeirian, duo at animal suscipit.</p>
+			<p>Doming vituperata nec no, enim nulla tibique sit ex, wisi petentium vel no. Mea affert percipitur in, est graece ancillae electram ad, et mei salutatus neglegentur. Et wisi mucius pri, nam tollit pertinacia id. Eum ei harum ridens gubergren. No hinc paulo corpora pri. Eos justo labore cu, ut qui accusam ancillae recusabo.</p>
+			<p>Id vix ubique labores phaedrum, mei nostrud dolorum honestatis in. Ut eos iudico offendit. Dico vivendum reformidans pri in, in quo quem purto temporibus, vide fuisset nominavi pri in. Sed in posse dictas voluptaria. Admodum sapientem quo et.</p>
+        </div><!-- /content -->    
+    
+		<!-- /footer -->
+    	<div data-role="footer" data-position = "fixed" >        
+        	<nav data-role = "navbar">
+        		<ul>
+    				<li><a href="#aboutPage" data-icon = "info">About</a></li>
+    				<li><a href="#cameraPage" data-icon = "camera">Camera App</a></li>
+        		</ul>
+    		</nav>	        
+		</div><!-- /footer END-->
+        
+	</div><!-- /Home page END--> 
+
+
+	<!-- /About Page -->
+	<div data-role="page" id = "aboutPage" data-theme = "d">
+
+		<div data-role="header">
+			<h1>About</h1>
+        	
+		</div><!-- /header -->
+	
+    	<!-- /content -->
+		<div data-role="content">	
+		  <p>Details:<br>
+		  	Rory Hall<br>
+		  	Student of Charlse Sturt University<br>
+	  	    Interests: Android, Python, Java, Pygame </p>
+		  <p><img src="assets/img/pythonLogo.png" class = "fullscreen" alt="Python logo"><img src="assets/img/android.gif" width="45" height="45" alt="android logo"><br>
+	      </p>		
+		</div><!-- /content -->    
+
+		<!-- /footer -->
+    	<div data-role="footer" data-position = "fixed" >        
+        	<nav data-role = "navbar">
+        		<ul>
+    				<li><a href="#introPage" data-icon = "home">Home</a></li>
+    				<li><a href="#cameraPage" data-icon = "camera">Camera App</a></li>
+        		</ul>
+    		</nav>	        
+		</div><!-- /footer END-->
+   
+	</div><!-- /End About page -->
+
+
+       
+    <!-- Camera Page -->    
+		<div data-role="page" id="cameraPage" data-theme = "d">
+        
+			<div data-role="content" class="content" style="text-align:center;">
+			    <div data-role="header" data-position="fixed" data-tap-toggle="false">
+				  <h1><strong>Camera API </strong> </h1>                    
+			    </div>
+					<p>Week 2 Assignment _ Use Phonegap Camera API</p>
+					<p>Better late than never :-)</p>                
+		  			
+					<span class="imgtitle">~Upload Photo~</span><br>
+					<img class="photozone" src="assets/img/webCam.gif" class = "fullscreen"><br><br>
+					
+
+				<div>
+					<a href="javascript://" onClick="onSuccess(this, 1)" data-role="button" data-icon = "camera">Click to take Photo</a>
+                    <br>
+                    <a href="javascript://" onClick="onSuccess(this, 0)" data-role="button" data-icon = "camera">Click to Get picture</a>
+                    
+				</div>
+
+			</div>
+
+		<!-- /footer -->
+    	<div data-role="footer" data-position = "fixed" >        
+        	<nav data-role = "navbar">
+        		<ul>
+    				<li><a href="#introPage" data-icon = "home">Home</a></li>
+    				<li><a href="#aboutPage" data-icon = "info">About</a></li>
+        		</ul>
+    		</nav>	        
+		</div><!-- /footer END-->            
+
+		</div><!-- Camera page END>
+        
+<!-- JavaScript File below -->
+
+		<script type="text/javascript" src="assets/libs/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="assets/libs/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="assets/js/index.js"></script>
+
+    </body>
+</html>

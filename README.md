@@ -3,4 +3,6 @@ phonegap_camera_test2
 
 Phonegap application for android
 
-Simple Edit
+Assignment for CSU 
+
+By Rory Hall
